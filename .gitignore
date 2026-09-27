@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Airflow runtime files
+**/airflow/logs/
+**/airflow/.airflow/
+
+# dbt generated files
+**/target/
+**/dbt_packages/
+**/logs/
+
+# Local Docker data
+**/postgres-db-volume/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/*.log
